@@ -1,0 +1,13 @@
+@mixin darkenBackground($urlLink) {
+    background-image: -webkit-linear-gradient(rgba(0,0,0, 0.3) 0%,rgba(0,0,0, 0.9) 95%),url($urlLink);
+    background-image: -moz-linear-gradient(rgba(0,0,0, 0.3) 0%,rgba(0,0,0, 0.9) 95%),url($urlLink);
+    background-image: -o-linear-gradient(rgba(0,0,0, 0.3) 0%,rgba(0,0,0, 0.9) 95%),url($urlLink);
+    background-image: linear-gradient(rgba(0,0,0, 0.3) 0%,rgba(0,0,0, 0.9) 95%),url($urlLink);
+    z-index         : 0;
+}
+@mixin darkenBackgroundLight($urlLink) {
+    background-image: -webkit-linear-gradient(rgba(0,0,0, 0.1) 0%,rgba(0,0,0, 0.3) 90%),url($urlLink);
+    background-image: -moz-linear-gradient(rgba(0,0,0, 0.1) 0%,rgba(0,0,0, 0.3) 90%),url($urlLink);
+    background-image: -o-linear-gradient(rgba(0,0,0, 0.1) 0%,rgba(0,0,0, 0.3) 90%),url($urlLink);
+    background-image: linear-gradient(rgba(0,0,0, 0.1) 0%,rgba(0,0,0, 0.3) 90%),url($urlLink);
+}

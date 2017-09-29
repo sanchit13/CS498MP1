@@ -1,0 +1,31 @@
+.columnLayout{
+    background-color: #e6e6e6;
+    padding-bottom: 5em;
+}
+
+.columnLayout article{
+    width: 33%;
+    min-height: 10em;
+    display: inline-block;
+
+    i{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        color: #b38600;
+    }
+    p{
+        padding-top: 5%;
+        width: 70%;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+}
+
+@media all and (max-width: 820px){
+    .columnLayout article{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+}
